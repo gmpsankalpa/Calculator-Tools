@@ -39,6 +39,7 @@ To run the age calculator locally, follow these steps:
 
 3. Open the index.html file in your web browser.
 
+---
 
 <div align="center">
 
