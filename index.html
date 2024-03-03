@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css//styles.css">
     <title>Age Calculator</title>
 </head>
 <body>
+    <div class="sidenav">
+        <a href="/index.html">Age Calculator</a>
+        <a href="/src/timecal.html">Time Calculator</a>
+        <a href="/src/overtime.html">Overtime Calculator</a>
+      </div>
+      
     <div id="overlay" class="overlay">
         <div class="loader"></div>
     </div>
@@ -14,7 +20,8 @@
     <div class="container">
         <h1 class="animated">Age Calculator</h1>
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob">
+        <input type="date" id="dob"><br>
+        
         <button onclick="calculateAge()" class="animated">Calculate Age</button>
         <p id="result" class="animated"></p>
         
@@ -22,6 +29,6 @@
         <div id="gif-container" class="animated"></div>
     </div>
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
