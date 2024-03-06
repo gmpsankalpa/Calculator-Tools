@@ -1,7 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f8f9fa;
 }
 
 .sidenav {
@@ -11,31 +12,32 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
-    overflow-x: hidden; /* Hide horizontal scrollbar on small screens */
+    background-color: #343a40;
+    overflow-x: hidden;
     transition: 0.5s;
+    padding-top: 60px;
 }
 
 .sidenav a {
-    padding: 15px 20px;
+    padding: 15px 25px;
     text-decoration: none;
     font-size: 18px;
-    color: #818181;
+    color: #dfe4ea;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    background-color: #495057;
 }
 
 .sidenav .close-btn {
     position: absolute;
     top: 10px;
-    right: 10px;
-    font-size: 20px;
+    right: 15px;
+    font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: #dfe4ea;
 }
 
 #main {
@@ -44,13 +46,21 @@ body {
 }
 
 .open-btn {
-    font-size: 20px;
+    font-size: 30px;
     cursor: pointer;
-    color: white;
+    color: #dfe4ea;
     position: fixed;
     z-index: 2;
     top: 10px;
     left: 10px;
+    background-color: #343a40;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.open-btn:hover {
+    background-color: #495057;
 }
 
 @media screen and (max-width: 768px) {
