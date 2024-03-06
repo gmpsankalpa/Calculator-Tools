@@ -1,6 +1,6 @@
 # Calculator-Tools
 
-![Calculator-Tools Banner](link-to-banner-image)
+![Calculator-Tools Banner](https://github.com/gmpsankalpa/Calculator-Tools/assets/123918506/d5651bc3-0f93-4875-8452-ab9b7d07ff23)
 
 ## Overview
 
@@ -43,6 +43,15 @@ We welcome contributions! If you have ideas for new features, improvements, or b
 
 This project is licensed under the [MIT License](LICENSE).
 
+**Calculator-Tools** - A project by [GMP Sankalpa](https://webdevcalctools.com)
+
 ---
 
-**Calculator-Tools** - A project by [GMP Sankalpa](https://webdevcalctools.com)
+<div align="center">
+
+   ![repo size](https://img.shields.io/github/repo-size/gmpsankalpa/Calculator-Tools?label=Repo%20Size&style=for-the-badge&labelColor=black&color=20bf6b)
+   ![GitHub forks](https://img.shields.io/github/forks/gmpsankalpa/Calculator-Tools?&labelColor=black&color=0fb9b1&style=for-the-badge)
+   ![GitHub stars](https://img.shields.io/github/stars/gmpsankalpa/Calculator-Tools?&labelColor=black&color=f7b731&style=for-the-badge)
+   ![GitHub LastCommit](https://img.shields.io/github/last-commit/gmpsankalpa/Calculator-Tools?logo=github&labelColor=black&color=d1d8e0&style=for-the-badge)
+
+</div>
