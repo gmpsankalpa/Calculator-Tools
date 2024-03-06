@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Time Calculator</title>
   <link rel="stylesheet" href="css/time_style.css">
+  <link rel="stylesheet" href="css/nav.css">
 </head>
 <body>
-  <<div class="sidenav">
+  <div id="mySidenav" class="sidenav">
+    <span class="close-btn" onclick="closeNav()">&times; Close</span>
     <a href="index.html">Age Calculator</a>
     <a href="timecal.html">Time Calculator</a>
     <a href="overtime.html">Overtime Calculator</a>
@@ -17,6 +19,8 @@
     <div class="loader"></div>
 </div>
 
+<div id="main">
+  <span class="open-btn" onclick="openNav()" id="openBtn">&#9776; Open</span>
   <div class="container">
     <h1 class="animated">Time Calculator</h1>
     <label for="startTime">Start Time:</label>
@@ -29,8 +33,10 @@
 
     <p id="result" class="animated"></p>
   </div>
+</div>
 
   <script src="js/time_script.js"></script>
+  <script src="js/nav.js"></script>
 </body>
 </html>
 
