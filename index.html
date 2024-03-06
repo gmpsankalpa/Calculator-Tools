@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
     <title>Age Calculator</title>
 </head>
 <body>
-    <div class="sidenav">
+    <div id="mySidenav" class="sidenav">
         <a href="index.html">Age Calculator</a>
         <a href="timecal.html">Time Calculator</a>
         <a href="overtime.html">Overtime Calculator</a>
-      </div>
-      
+    </div>
+
     <div id="overlay" class="overlay">
         <div class="loader"></div>
     </div>
 
-    <div class="container">
-        <h1 class="animated">Age Calculator</h1>
-        <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob"><br>
-        
-        <button onclick="calculateAge()" class="animated">Calculate Age</button>
-        <p id="result" class="animated"></p>
-        
-        <!-- Container for displaying age-appropriate GIF -->
-        <div id="gif-container" class="animated"></div>
+    <div id="main">
+        <div class="container">
+            <h1 class="animated">Age Calculator</h1>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob"><br>
+            
+            <button onclick="calculateAge()" class="animated">Calculate Age</button>
+            <p id="result" class="animated"></p>
+            
+            <!-- Container for displaying age-appropriate GIF -->
+            <div id="gif-container" class="animated"></div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
+    <script src="js/navi.js"></script>
 </body>
 </html>
