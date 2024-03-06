@@ -53,7 +53,6 @@ body {
     left: 10px;
 }
 
-
 @media screen and (max-width: 768px) {
     .sidenav {
         width: 0;
@@ -69,5 +68,10 @@ body {
 
     .open-btn.hide {
         display: none;
+    }
+
+    .sidenav {
+        top: 0;
+        left: 0;
     }
 }
