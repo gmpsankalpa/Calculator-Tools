@@ -4,20 +4,19 @@ body {
     padding: 0;
 }
 
-#mySidenav {
+.sidenav {
     height: 100%;
-    width: 250px;
+    width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: #111;
-    padding-top: 20px;
     overflow-x: hidden; /* Hide horizontal scrollbar on small screens */
     transition: 0.5s;
 }
 
-#mySidenav a {
+.sidenav a {
     padding: 15px 20px;
     text-decoration: none;
     font-size: 18px;
@@ -26,27 +25,49 @@ body {
     transition: 0.3s;
 }
 
-#mySidenav a:hover {
+.sidenav a:hover {
     color: #f1f1f1;
 }
 
-#main {
-    margin-left: 250px; /* Set the margin to the width of the sidebar */
-    padding: 16px;
-    transition: margin-left 0.5s;
+.sidenav .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
 }
 
+#main {
+    transition: margin-left 0.5s;
+    padding: 16px;
+}
+
+.open-btn {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+}
+
+
 @media screen and (max-width: 768px) {
-    #mySidenav {
+    .sidenav {
         width: 0;
     }
 
     #main {
         margin-left: 0;
     }
-}
 
-@media screen and (max-height: 450px) {
-    #mySidenav { padding-top: 15px; }
-    #mySidenav a { font-size: 16px; }
+    .open-btn {
+        display: block;
+    }
+
+    .open-btn.hide {
+        display: none;
+    }
 }
