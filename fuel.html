@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Cost Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <span class="close-btn" onclick="closeNav()">&times; Close</span>
+        <a href="index.html">Age Calculator</a>
+        <a href="timecal.html">Time Calculator</a>
+        <a href="overtime.html">Overtime Calculator</a>
+        <a href="fuel.html">Fuel Cost Calculator</a>
+    </div>
+
+    <div id="overlay" class="overlay">
+        <div class="loader"></div>
+    </div>
+
+    <div id="main">
+        <span class="open-btn" onclick="openNav()" id="openBtn">&#9776; Open</span>
+        <div class="container">
+            <h1 class="animated show">Fuel Cost Calculator</h1>
+            <form id="fuelForm" class="animated show">
+                <label for="distance">Distance (in kilometers):</label>
+                <input type="number" id="distance" required><br>
+
+                <label for="fuelEfficiency">Fuel Efficiency (in liters per 100 km):</label>
+                <input type="number" id="fuelEfficiency" required><br>
+
+                <label for="fuelPrice">Fuel Price (per liter in Rs):</label>
+                <input type="number" id="fuelPrice" required><br>
+
+                <button type="button" onclick="calculateFuelCost()">Calculate</button>
+            </form>
+
+            <div id="result" class="animated show"></div>
+
+            <div class="overlay">
+                <div class="loader"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/fuel.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>
