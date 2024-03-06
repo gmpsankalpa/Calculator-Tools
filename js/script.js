@@ -74,3 +74,4 @@ function displayAgeGif(age) {
         gifContainer.classList.remove('show');
     }
 }
+
